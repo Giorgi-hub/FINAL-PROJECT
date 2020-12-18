@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MY PROJECT MAZER FACKERS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<style>
+    body {
+        background-color: #21212E;
+    }
+    .ul-div-s {
+        position: absolute;
+        margin-left: 650px;
+        top: 40px;
+        width: 600px;
+        justify-content: space-between;
+        display: flex;
+    } 
+    button {
+        background-color: #21212E;
+        color: #46C2FF;
+        width: 90px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid #BD11FA;
+        border-radius: 4px;
+    } 
+    .buton {
+        background:linear-gradient(#822EFF,#C015FD) ;
+        color: #ffffff;
+        width: 90px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 2px solid #BD11FA;
+        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+    }
+    .circle {
+        position: relative;
+        width: 60vh;
+        height: 60vh;
+        background: linear-gradient(#822EFF,#C015FD);
+        border-radius: 50%;
+        margin-left: 750px;
+        animation: animate 0.5s linear infinite;
+    }
+    @keyframes animate {
+        from {
+            transform: rotate (0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .circle:after {
+        content:'';
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        left: 35px;
+        bottom: 35px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    .circle span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#46C2FF,#6F00B6);
+        border-radius: 50%;
+    }
+    .circle span:nth-child(1){
+        filter: blur(5px);
+    }
+    .circle span:nth-child(2){
+        filter: blur(10px);
+    }
+    .circle span:nth-child(3){
+        filter: blur(20px);
+    }
+    .circle span:nth-child(4){
+        filter: blur(55px);
+    }
+    .dincho {
+        position: absolute;
+        margin-left: 785px;
+        width: 385px;
+        height: 385px;
+        top: 174px;
+    }
+    a {
+        position: absolute;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #2196f3;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 24px;
+        overflow: hidden;
+        transition: 0.4s;   
+        margin-left: 40px;
+    }
+    a:hover
+    {
+        color:#255784;
+        background:#2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 2s;
+    }
+    a span
+    {
+        position: absolute;
+        display: block;
+    }
+    a span:nth-child(5)
+    {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#2196f3)
+    }
+    a:hover span:nth-child(5)
+    {
+        bottom: 100%;
+        transition: 2s;
+        transition-delay: 0.75s;
+    }
+</style>
+<body>
+    <header>
+        <div class="header-div">
+            <img src="img/Group 2460.svg" class="logo" alt="logo">
+        </div>
+        <div class="ul-div-f">
+            <ul class="ul-div-s">
+                <button><li>Home</li></button>
+                <button><li>Eents</li></button>
+                <button><li>About Us</li></button>
+                <button><li>Contact</li></button>
+                <button class="buton"><li>Sing in</li></button>
+            </ul>
+        </div>
+        <div class="circle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/Ellipse 1141.png" class="dincho">
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            See All Events
+        </a>
+    </header>
+</body>
+</html>
