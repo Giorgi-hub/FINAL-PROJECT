@@ -6,159 +6,87 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="app.js">
 </head>
-<style>
-    body {
-        background-color: #21212E;
-    }
-    .ul-div-s {
-        position: absolute;
-        margin-left: 650px;
-        top: 40px;
-        width: 600px;
-        justify-content: space-between;
-        display: flex;
-    } 
-    button {
-        background-color: #21212E;
-        color: #46C2FF;
-        width: 90px;
-        height: 40px;
-        font-size: 14px;
-        font-weight: bold;
-        border: 2px solid #BD11FA;
-        border-radius: 4px;
-    } 
-    .buton {
-        background:linear-gradient(#822EFF,#C015FD) ;
-        color: #ffffff;
-        width: 90px;
-        height: 40px;
-        font-size: 14px;
-        font-weight: bold;
-        border: 2px solid #BD11FA;
-        box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
-    }
-    .circle {
-        position: relative;
-        width: 60vh;
-        height: 60vh;
-        background: linear-gradient(#822EFF,#C015FD);
-        border-radius: 50%;
-        margin-left: 750px;
-        animation: animate 0.5s linear infinite;
-    }
-    @keyframes animate {
-        from {
-            transform: rotate (0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-    .circle:after {
-        content:'';
-        position: absolute;
-        top: 35px;
-        right: 35px;
-        left: 35px;
-        bottom: 35px;
-        border-radius: 50%;
-        background-color: black;
-    }
-    .circle span {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#46C2FF,#6F00B6);
-        border-radius: 50%;
-    }
-    .circle span:nth-child(1){
-        filter: blur(5px);
-    }
-    .circle span:nth-child(2){
-        filter: blur(10px);
-    }
-    .circle span:nth-child(3){
-        filter: blur(20px);
-    }
-    .circle span:nth-child(4){
-        filter: blur(55px);
-    }
-    .dincho {
-        position: absolute;
-        margin-left: 785px;
-        width: 385px;
-        height: 385px;
-        top: 174px;
-    }
-    a {
-        position: absolute;
-        display: inline-block;
-        padding: 15px 30px;
-        color: #2196f3;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-size: 24px;
-        overflow: hidden;
-        transition: 0.4s;   
-        margin-left: 40px;
-    }
-    a:hover
-    {
-        color:#255784;
-        background:#2196f3;
-        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-        transition-delay: 2s;
-    }
-    a span
-    {
-        position: absolute;
-        display: block;
-    }
-    a span:nth-child(5)
-    {
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(360deg,transparent,#2196f3)
-    }
-    a:hover span:nth-child(5)
-    {
-        bottom: 100%;
-        transition: 2s;
-        transition-delay: 0.75s;
-    }
-</style>
 <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
     <header>
-        <div class="header-div">
-            <img src="img/Group 2460.svg" class="logo" alt="logo">
+        <div class="div-1">
+            <img src="img/Group 2501.svg" class="logo" alt="logo">
         </div>
-        <div class="ul-div-f">
-            <ul class="ul-div-s">
-                <button><li>Home</li></button>
-                <button><li>Eents</li></button>
-                <button><li>About Us</li></button>
-                <button><li>Contact</li></button>
-                <button class="buton"><li>Sing in</li></button>
-            </ul>
+        <div class="div-a">
+            <a class="fs" href="#">HOME</a>
+            <a class="fs" href="#">EVENTS</a>
+            <a class="fs" href="#">ABOUT US</a>
+            <a class="fs" href="#">CONTACT</a>
         </div>
+        <a class="ds"><span>Sign In</span></a>       
+
+        <h2 data-text="Club">Club</h2>
+        <h4 data-text1="In">In</h4>
+    </header>
+    <div class="sec1">
+        <div>
+            <img src="img/Rectangle 2281.png" alt="img" class="img-sec">
+            <div class="half-div">
+                <div class="div3">
+                    <h6>ARTIST</h6>
+                    <a class="bao">You begin with a text, you sculpt information, you chisel away what's<br>
+                         not needed, you come to the p contey 
+                        you may find some redeeming value with, wait for it, dummy copy, no less.</a>
+                    <a class="bao1">There's lot of hate out there for a text that amounts to little more than<br>
+                         garbled words in an old language. The villagers are out there with a vengeance to get<br>
+                        that Frankenstein, wielding torches and pitchforks, wanting to tar and feather it at the<br>
+                         least, running it out of town in shame.</a>    
+                </div>
+            </div>           
+        </div>    
+    </div>
+    <section>
+    <div class="sec2">
         <div class="circle">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <img src="img/Ellipse 1141.png" class="dincho">
-        <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            See All Events
-        </a>
-    </header>
+        </div> 
+        <from class="box" action="index.html" method="post">
+            <h1>Login</h1>
+            <input type="text" name="" placeholder="Username">
+            <input type="password" name="" placeholder="Password">
+            <input type="submit" name="" placeholder="Login">
+        </from>
+        <img src="img/Ellipse 1141.png" alt="disco" class="dincho">
+        <a class="buttom" href="#"><span>REGISTER NOW</span></a> 
+    </div>
+    </section>
+
+    <footer>
+        <img src="img/Group 2503.svg" alt="logo" class="logo2">
+        <div class="footer-div">
+            
+            <div class="list-div">
+                <ul>
+                    <li class="li1">Quick Links</li>
+                    <li>HOME</li>
+                    <li>EVENT</li>
+                    <li>ABOUT US</li>
+                    <li>CONTACT</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="fut-div">About us</h3>
+                <a class="fut-a">You begin with a text, you sculpt information,<br>
+                     you chisel away what's not needed,<br>
+                     you come to the point, make things clear, add <br>
+                     value, you're a content person, you like words. <br>
+                </a>
+              
+            </div>
+        </div>    
+      </footer>
+
 </body>
 </html>
